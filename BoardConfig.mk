@@ -6,7 +6,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 USE_CAMERA_STUB := true
 #TARGET_PROVIDES_INIT_RC := true
 
-USE_NINJA := false
+#USE_NINJA := false
 
 # Platform
 ARCH_ARM_HAVE_TLS_REGISTER := true
