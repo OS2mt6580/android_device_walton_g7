@@ -1,5 +1,0 @@
-# temporary enables NAV bar (soft keys)
-qemu.hw.mainkeys=1
-
-
-ro.sf.lcd_density=320

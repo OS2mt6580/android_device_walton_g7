@@ -15,9 +15,9 @@
 
 TARGET_BOARD_PLATFORM := mt6580
 
-DEVICE_PATH := device/tinno/v3702
+DEVICE_PATH := device/walton/g7
 
-include device/tinno/v3702/mt6580-common/BoardConfigCommon.mk
+include device/walton/g7/mt6580-common/BoardConfigCommon.mk
 
 MTK_APPENDED_DTB_SUPPORT := yes
 
@@ -47,13 +47,11 @@ BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := v3702,tinno_v3702,BQS-5020,S5020,Strike
+TARGET_OTA_ASSERT_DEVICE := Infinix_X510_sprout,walton,g7,d5110
 
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true

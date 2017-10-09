@@ -19,7 +19,7 @@ endif
 
 TARGET_CYANOGEN_COMMON := mt6580
 
-COMMON_PATH := device/tinno/v3702/mt6580-common
+COMMON_PATH := device/walton/g7/mt6580-common
 TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 
 TARGET_BOARD_PLATFORM ?= mt6580
@@ -53,9 +53,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # FSTAB
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.mt6580
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/recovery.fstab
 
-TARGET_PREBUILT_KERNEL := $(COMMON_PATH)/prebuilt/kernel
 # Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 

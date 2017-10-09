@@ -12,22 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/tinno/v3702/full_v3702.mk)
+$(call inherit-product, device/walton/g7/g7.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := lineage_v3702
-BOARD_VENDOR := tinno
-PRODUCT_DEVICE := v3702
+PRODUCT_NAME := lineage_g7
+BOARD_VENDOR := walton
+PRODUCT_DEVICE := g7
 
 PRODUCT_GMS_CLIENTID_BASE := android-tinno
 
-PRODUCT_MANUFACTURER := BQ
-PRODUCT_MODEL := BQS-5020
+PRODUCT_MANUFACTURER := Walton
+PRODUCT_MODEL := Primo-G7
 
-PRODUCT_BRAND := BQ
-TARGET_VENDOR := tinno
-TARGET_VENDOR_PRODUCT_NAME := v3702
-TARGET_VENDOR_DEVICE_NAME := v3702
+PRODUCT_BRAND := Walton
+TARGET_VENDOR := walton
+TARGET_VENDOR_PRODUCT_NAME := g7
+TARGET_VENDOR_DEVICE_NAME := g7
 PRODUCT_RESTRICT_VENDOR_FILES := false

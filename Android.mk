@@ -14,7 +14,4 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
-
-ifneq (,$(filter v3702,$(TARGET_DEVICE)))
 include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
