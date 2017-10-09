@@ -121,5 +121,5 @@ allow system_server proc_ged:file {open read write ioctl getattr};
 allow system_server log_tag_prop:property_service set;
 
 # new
-allow system_server dex2oat_exec:file execute;
-allow system_server dex2oat_exec:file execute_no_trans;
+#allow system_server dex2oat_exec:file execute;
+#allow system_server dex2oat_exec:file execute_no_trans;

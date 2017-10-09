@@ -57,7 +57,7 @@ allow init kernel:system module_request;
 
 # new
 allow init debugfs:file write;
-allow init default_android_service:service_manager add;
+#allow init default_android_service:service_manager add;
 allow init fuse:dir add_name;
 allow init fuse:dir open;
 allow init fuse:dir read;
@@ -82,5 +82,5 @@ allow init servicemanager:binder transfer;
 allow init storage_file:lnk_file read;
 allow init stpwmt_device:chr_file write;
 allow init system_data_file:sock_file write;
-allow init system_file:file execute_no_trans;
+#allow init system_file:file execute_no_trans;
 allow init tmpfs:lnk_file create;
