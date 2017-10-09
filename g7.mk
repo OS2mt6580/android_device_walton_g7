@@ -122,7 +122,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-qemu.hw.mainkeys=1
+PRODUCT_PROPERTY_OVERRIDES += \
+qemu.hw.mainkeys=1 \
 ro.sf.lcd_density=280
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel.g7
